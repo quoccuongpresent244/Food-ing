@@ -8,4 +8,8 @@
 
     <string name="edittext_share">\'Twas brillig and the slithy toves</string>
     <string name="button_share">Share This Text</string>
+    <string name="open_Alarm_Hour" >Hour</string>
+    <string name="open_Alarm_Minute" >Minute</string>
+    <string name="open_Alarm" >Set Alarm</string>
+    <string name="open_Alarm_tp" >Set Alarm with Time Picker</string>
 </resources>

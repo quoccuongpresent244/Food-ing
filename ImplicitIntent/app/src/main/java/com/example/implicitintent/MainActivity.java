@@ -3,17 +3,25 @@ package com.example.implicitintent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ShareCompat;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.app.TimePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TimePicker;
 
 public class MainActivity extends AppCompatActivity {
     private EditText mWebsiteEditText;
     private EditText mLocationEditText;
     private EditText mShareTextEditText;
+    private EditText mHour;
+    private EditText mMinute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mWebsiteEditText = findViewById(R.id.website_edittext);
         mLocationEditText = findViewById(R.id.location_edittext);
         mShareTextEditText = findViewById(R.id.share_edittext);
+        mHour = findViewById(R.id.alarm_hour);
+        mMinute = findViewById(R.id.alarm_minute);
     }
 
     public void openWebsite(View view) {
@@ -63,5 +73,26 @@ public class MainActivity extends AppCompatActivity {
                    .setChooserTitle("Share this text with: ")
                    .setText(text)
                    .startChooser();
+    }
+
+    public void openAlarm(View view) {
+        if(!mHour.getText().toString().isEmpty() && !mHour.getText().toString().isEmpty()) {
+            Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM);
+            intent.putExtra(AlarmClock.EXTRA_HOUR, Integer.parseInt(mHour.getText().toString()));
+            intent.putExtra(AlarmClock.EXTRA_MINUTES, Integer.parseInt(mMinute.getText().toString()));
+            intent.putExtra(AlarmClock.EXTRA_MESSAGE, "Set alarm");
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            } else {
+                Log.d("ImplicitIntents", "Can't handle this intent!");
+            }
+        }
+        else{
+            Log.d("ImplicitIntents", "Please enter number");
+        }
+    }
+
+    public void openAlarm_tp(View view) {
+
     }
 }

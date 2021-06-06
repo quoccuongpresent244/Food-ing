@@ -46,5 +46,48 @@
         android:text="@string/button_share"
         android:layout_marginLeft="10dp"
         android:onClick="shareText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALARM _ 1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_hour"
+            android:hint="@string/open_Alarm_Hour"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_minute"
+            android:hint="@string/open_Alarm_Minute"
+            android:textSize="25sp"/>
+    </LinearLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_alarm_button"
+        android:text="@string/open_Alarm"
+        android:layout_marginLeft="10dp"
+        android:onClick="openAlarm"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALARM _ 2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_alarm_timepicker"
+        android:text="@string/open_Alarm_tp"
+        android:layout_marginLeft="10dp"
+        android:onClick="openAlarm_tp"/>
 </LinearLayout>
