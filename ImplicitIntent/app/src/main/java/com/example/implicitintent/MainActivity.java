@@ -1,5 +1,6 @@
 package com.example.implicitintent;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ShareCompat;
 
@@ -9,6 +10,7 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.AlarmClock;
 import android.util.Log;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mShareTextEditText;
     private EditText mHour;
     private EditText mMinute;
+    private TimePicker mTimePicker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mShareTextEditText = findViewById(R.id.share_edittext);
         mHour = findViewById(R.id.alarm_hour);
         mMinute = findViewById(R.id.alarm_minute);
+        mTimePicker = findViewById(R.id.alarm_picker);
     }
 
     public void openWebsite(View view) {
@@ -92,7 +96,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void openAlarm_tp(View view) {
-
+        Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM);
+        intent.putExtra(AlarmClock.EXTRA_HOUR, mTimePicker.getHour());
+        intent.putExtra(AlarmClock.EXTRA_MINUTES, mTimePicker.getMinute());
+        intent.putExtra(AlarmClock.EXTRA_MESSAGE, "Set alarm");
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Log.d("ImplicitIntents", "Can't handle this intent!");
+        }
     }
 }
