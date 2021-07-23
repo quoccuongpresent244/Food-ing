@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color1">#fff4f3</color>
+    <color name="color2">#7f7a79</color>
+    //Palette mau 1
+    <color name="color3">#565c41</color>
+    <color name="color4">#31372c</color>
+    <color name="color5">#ece3ab</color>
+    <color name="color6">#e3a125</color>
+    <color name="color7">#c47a01</color>
+    //Palette mau 2
+    <color name="color8">#011f4b</color>
+    <color name="color9">#03396c</color>
+    <color name="color10">#005b96</color>
+    <color name="color11">#6497b1</color>
+    <color name="color12">#b3cde0</color>
+
+
+</resources>
