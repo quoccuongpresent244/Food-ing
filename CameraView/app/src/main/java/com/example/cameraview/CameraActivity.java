@@ -71,7 +71,6 @@ public class CameraActivity extends Activity
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
 
-        smileButton = findViewById(R.id.smileButton);
 
         flipCamera = findViewById(R.id.flipCamera);
         gallery = findViewById(R.id.gallery);
