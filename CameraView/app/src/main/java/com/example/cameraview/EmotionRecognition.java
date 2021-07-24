@@ -117,8 +117,10 @@ public class EmotionRecognition {
         }
 
         for (int i = 0; i < faceArray.length; i++){
+            /*
             Imgproc.rectangle(input, faceArray[i].tl(), faceArray[i].br(),
                     new Scalar(0,255,255,0), 2);
+             */
 
             Rect roi = new Rect((int) faceArray[i].tl().x, (int)faceArray[i].tl().y,
                     (int) faceArray[i].br().x -(int) faceArray[i].tl().x,
@@ -139,11 +141,11 @@ public class EmotionRecognition {
             if (!emotion_string.equals("Happy")){
                 allSmile = false;
             }
-
+            /*
             Imgproc.putText(input,emotion_string,faceArray[i].tl(),
                     1,1.5,
                     new Scalar(225,0,0,225), 2);
-
+             */
         }
         Core.flip(input.t(), input, 0);
         if (allSmile){
@@ -173,7 +175,7 @@ public class EmotionRecognition {
         else if (emotion_float >= 3.5 && emotion_float < 4.5){
             res = "Sad";
         }
-        else if (emotion_float >= 4.5 && emotion_float < 5.5){
+        else if (emotion_float >= 4.5 && emotion_float < 5.2){
             res = "Disgust";
         }
         else {

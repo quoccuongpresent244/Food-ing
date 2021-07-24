@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageView
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="36dp"

@@ -1,20 +1,20 @@
 package com.example.cameraview;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.sackcentury.shinebuttonlib.ShineButton;
-
-import org.checkerframework.checker.units.qual.A;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.LoaderCallbackInterface;
@@ -42,7 +42,7 @@ public class CameraActivity extends Activity
                 case LoaderCallbackInterface
                         .SUCCESS:{
                     Log.i(TAG, "OpenCv is loaded");
-                    mOpenCvCameraView.setCameraIndex(0);
+                    mOpenCvCameraView.setCameraIndex(cameraIndex);
                     mOpenCvCameraView.setMaxFrameSize(960,1280);
                     mOpenCvCameraView.enableView();
                 }
@@ -57,7 +57,11 @@ public class CameraActivity extends Activity
     private ImageView gallery;
     private int cameraIndex;
     private ImageCapture imageCapture;
-    private ShineButton smileButton;
+    private ImageView emotionIcon;
+    private Drawable D;
+    private int[] resourceBg;
+    private FrameLayout emotionBackground;
+    boolean isCaptured = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,15 +70,29 @@ public class CameraActivity extends Activity
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         setContentView(R.layout.activity_camera);
+
         imageCapture = ImageCapture.getInstance();
+        cameraIndex = 1;
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.frameSurface);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
 
+        emotionIcon = findViewById(R.id.emotionIcon);
+        emotionBackground = findViewById(R.id.emotionBackground);
+        D =  emotionIcon.getDrawable();
 
         flipCamera = findViewById(R.id.flipCamera);
         gallery = findViewById(R.id.gallery);
-        cameraIndex = 0;
+
+        resourceBg = new int[15];
+        for(int i = 0; i < 15; i ++){
+            String rs = "ic_bg" + String.valueOf(i+1);
+            resourceBg[i] = drawableRecourse(rs);
+            Log.d("res", rs);
+            Log.d("res", String.valueOf(resourceBg[i]));
+        }
+
+
         flipCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -129,6 +147,11 @@ public class CameraActivity extends Activity
             Log.d(TAG, "OpenCv failed to load");
             OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_4_0, this, mBaseLoaderCallback);
         }
+        isCaptured = false;
+        if (D instanceof AnimatedVectorDrawable){
+            AnimatedVectorDrawable avd = (AnimatedVectorDrawable) D;
+            avd.reset();
+        }
     }
 
     @Override
@@ -174,22 +197,53 @@ public class CameraActivity extends Activity
         mRgba = emotionRecognition.recognizeImage(mRgba);
         ImageCapture imageCapture = ImageCapture.getInstance();
 
+
+
         if(emotionRecognition.getResult() == 1){
-            timeKeepers = (timeKeepers + 1) % 15;
+            timeKeepers = (timeKeepers + 1);
         }
         else {
             timeKeepers = 0;
         }
         if(timeKeepers == 14){
             imageCapture.addImage(inputCopy);
+            isCaptured = true;
+            CameraActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    // Stuff that updates the UI
+                    if (D instanceof AnimatedVectorDrawableCompat) {
+                        AnimatedVectorDrawableCompat avd = (AnimatedVectorDrawableCompat) D;
+                        avd.start();
+                    }
+                    else if (D instanceof AnimatedVectorDrawable){
+                        AnimatedVectorDrawable avd = (AnimatedVectorDrawable) D;
+                        avd.start();
+                    }
+                }
+            });
         }
-
-        Log.d("Time", String.valueOf(timeKeepers));
-
-
+        CameraActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if(!isCaptured){
+                    emotionBackground.setBackgroundResource(resourceBg[timeKeepers]);
+                }else{
+                    emotionBackground.setBackgroundResource(resourceBg[14]);
+                }
+            }
+        });
         return mRgba;
     }
+
+    protected int drawableRecourse(String name) {
+        return getResources().getIdentifier(name, "drawable", getPackageName());
+    }
+
+
 }
+
+
 
 
 
