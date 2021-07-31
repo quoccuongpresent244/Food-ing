@@ -45,6 +45,11 @@ public class ImageCapture {
 
     }
 
+    public void releaseImage(){
+        image = null;
+        bmp = null;
+    }
+
     public ArrayList<Mat> getImageArray() {
         return imageArray;
     }
