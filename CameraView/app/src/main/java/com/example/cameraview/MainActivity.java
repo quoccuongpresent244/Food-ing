@@ -26,10 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView button;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         button = (ImageView) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

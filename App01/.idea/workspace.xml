@@ -22,13 +22,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c04ebbb-ab75-4027-a70a-0ab5a2f35711" name="Default Changelist" comment="" />
+    <list default="true" id="8c04ebbb-ab75-4027-a70a-0ab5a2f35711" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/HistoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/HistoryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CameraView/app/src/main/res/layout/history_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/CameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/CameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/GalleryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/GalleryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/MainActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/app/src/main/java/com/example/cameraview/MainActivity2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/app/src/main/res/layout/fragment_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/app/src/main/res/layout/fragment_gallery.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/generated/aidl_source_output_dir/debug/out/org/opencv/engine/OpenCVEngineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/generated/aidl_source_output_dir/debug/out/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/compile_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/compile_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/local_only_symbol_list/debug/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/local_only_symbol_list/debug/R-def.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/merged_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/packaged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/packaged_manifests/debug/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CameraView/openCVLibrary3410/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@R58N71KVKAR]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\quocc\.android\avd\Pixel_4_API_28.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -45,8 +74,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1627055702665" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -136,5 +167,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

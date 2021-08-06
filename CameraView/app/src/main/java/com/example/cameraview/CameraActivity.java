@@ -4,9 +4,11 @@ import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
@@ -23,6 +25,7 @@ import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class CameraActivity extends Activity
@@ -207,6 +210,15 @@ public class CameraActivity extends Activity
         }
         if(timeKeepers == 14){
             imageCapture.addImage(inputCopy);
+
+            //Transform bitmap -> byte[]
+            Bitmap bitmapLibrary = imageCapture.bmp;
+            ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+            bitmapLibrary.compress(Bitmap.CompressFormat.PNG, 100, byteArray);
+            byte[] image = byteArray.toByteArray();
+
+            MainActivity2.database.INSERT_HISTORY(image);
+
             isCaptured = true;
             CameraActivity.this.runOnUiThread(new Runnable() {
                 @Override

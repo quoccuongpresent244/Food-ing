@@ -4,12 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GalleryFragment"
-    android:background="#00FF00">
+    android:background="#fdffe0">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/deleteAllBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
 </FrameLayout>

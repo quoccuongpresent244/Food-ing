@@ -35,11 +35,22 @@ public class MainActivity2 extends AppCompatActivity {
     private BottomAppBar appBar;
     private ImageView home, gallery, favorite, setting;
     private FloatingActionButton camera;
+    public static Database database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        //create database
+        database = new Database(this, "QLibrary.sqlite", null, 1);
+        database.QueryData("CREATE TABLE IF NOT EXISTS History(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "Image BLOB)");
+
+        database.QueryData("CREATE TABLE IF NOT EXISTS Favorite(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "Image BLOB)");
+
+
 
         assignItem();
         setSupportActionBar(appBar);

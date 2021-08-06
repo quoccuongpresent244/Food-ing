@@ -1,12 +1,19 @@
 package com.example.cameraview;
 
+import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +21,11 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class GalleryFragment extends Fragment {
+
+    private ArrayList<HistoryItem> historyItems;
+    private RecyclerView mRecyclerView;
+    private HistoryAdapter mAdapter;
+    private ImageView deleteAllBtn;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +70,32 @@ public class GalleryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gallery, container, false);
+        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
+
+        mRecyclerView = view.findViewById(R.id.recyclerView);
+        historyItems = new ArrayList<>();
+
+        mAdapter = new HistoryAdapter(getContext(), historyItems);
+        mRecyclerView.setAdapter(mAdapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+        //Get Data
+        UpdateData();
+
+        return view;
+    }
+
+    public void UpdateData(){
+        Cursor cursor = MainActivity2.database.GetData("SELECT * FROM History");
+        historyItems.clear();
+        while (cursor.moveToNext()){
+            historyItems.add(new HistoryItem(
+                    cursor.getInt(0),
+                    cursor.getBlob(1)
+            ));
+        }
+        mAdapter.notifyDataSetChanged();
     }
 }
+

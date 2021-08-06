@@ -1,12 +1,17 @@
 package com.example.cameraview;
 
+import android.database.Cursor;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,10 @@ public class FavoriteFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ArrayList<HistoryItem> historyItems;
+    private RecyclerView mRecyclerView;
+    private FavAdapter mmAdapter;
 
     public FavoriteFragment() {
         // Required empty public constructor
@@ -59,6 +68,30 @@ public class FavoriteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorite, container, false);
+        View view = inflater.inflate(R.layout.fragment_favorite, container, false);
+        mRecyclerView = view.findViewById(R.id.recyclerView2);
+        historyItems = new ArrayList<>();
+
+        mmAdapter = new FavAdapter(getContext(), historyItems);
+        mRecyclerView.setAdapter(mmAdapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+        //Get Data
+        UpdateData();
+
+        return view;
+    }
+
+    public void UpdateData(){
+        Cursor cursor = MainActivity2.database.GetData("SELECT * FROM Favorite");
+        historyItems.clear();
+        while (cursor.moveToNext()){
+            historyItems.add(new HistoryItem(
+                    cursor.getInt(0),
+                    cursor.getBlob(1)
+            ));
+        }
+        mmAdapter.notifyDataSetChanged();
     }
 }
