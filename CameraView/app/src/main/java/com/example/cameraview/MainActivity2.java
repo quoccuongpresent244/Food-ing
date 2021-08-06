@@ -36,6 +36,7 @@ public class MainActivity2 extends AppCompatActivity {
     private ImageView home, gallery, favorite, setting;
     private FloatingActionButton camera;
     public static Database database;
+    public static FavoriteFragment favoriteFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         HomeFragment homeFragment = new HomeFragment();
         GalleryFragment galleryFragment = new GalleryFragment();
-        FavoriteFragment favoriteFragment = new FavoriteFragment();
+        favoriteFragment = new FavoriteFragment();
         SettingFragment settingFragment = new SettingFragment();
 
         setFragment(galleryFragment);

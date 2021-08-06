@@ -48,6 +48,7 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.ViewHolder> {
             @Override
             public void onClick(View v) {
                 MainActivity2.database.QueryData("DELETE FROM Favorite WHERE Id = '"+ item.getId() +"'");
+                MainActivity2.favoriteFragment.UpdateData();
                 //QLibraryActivity.database.QueryData("DELETE FROM History WHERE Id = '"+ item.getId() +"'");
                 //context.DialogDelete(item.getId());
             }
