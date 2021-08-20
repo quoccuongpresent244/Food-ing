@@ -1,0 +1,13 @@
+com/example/mapstest/MapsActivity.java
+ com.example.mapstest.MapsActivity
+ com.example.mapstest.MapsActivity$1
+com/example/mapstest/GetNearbyPlacesData.java
+ com.example.mapstest.GetNearbyPlacesData
+com/example/mapstest/BuildConfig.java
+ com.example.mapstest.BuildConfig
+com/example/mapstest/DataParser.java
+ com.example.mapstest.DataParser
+com/example/mapstest/databinding/ActivityMapsBinding.java
+ com.example.mapstest.databinding.ActivityMapsBinding
+com/example/mapstest/DownloadUrl.java
+ com.example.mapstest.DownloadUrl
