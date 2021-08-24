@@ -7,17 +7,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="80dp"
         android:background="@color/cream_can">
-
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/gold_tips1">
 
 
-    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -29,14 +24,13 @@
             android:layout_height="200dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/test1" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="370dp"
         android:orientation="vertical"
-        android:background="@color/desert_storm">
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView4"
@@ -49,7 +43,7 @@
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:text="Địa chỉ: 276/7 Hòa Hưng, P.13,  Quận 10, TP. HCM"
             android:textSize="18dp"/>
         <TextView
