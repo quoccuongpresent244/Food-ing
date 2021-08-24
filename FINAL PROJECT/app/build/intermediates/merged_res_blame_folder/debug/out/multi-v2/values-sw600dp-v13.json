@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\quocc\\.gradle\\caches\\transforms-2\\files-2.1\\153e9a71173c904bcddecf401824517a\\mediarouter-1.0.0-alpha5\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\BarryAllen\\.gradle\\caches\\transforms-2\\files-2.1\\153e9a71173c904bcddecf401824517a\\mediarouter-1.0.0-alpha5\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\quocc\\.gradle\\caches\\transforms-2\\files-2.1\\77c7b97873973e149b09819f46c0a153\\appcompat-1.3.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\BarryAllen\\.gradle\\caches\\transforms-2\\files-2.1\\77c7b97873973e149b09819f46c0a153\\appcompat-1.3.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\quocc\\.gradle\\caches\\transforms-2\\files-2.1\\10046aad9e73cbf22653afacdcab8838\\material-1.4.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\BarryAllen\\.gradle\\caches\\transforms-2\\files-2.1\\10046aad9e73cbf22653afacdcab8838\\material-1.4.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/cream_can">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gold_tips1">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/desert_storm">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/test1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:background="@color/desert_storm">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Phở 270 – Quán Phở Ngon Ở Sài Gòn"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Địa chỉ: 276/7 Hòa Hưng, P.13,  Quận 10, TP. HCM"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Giờ mở cửa: Đang cập nhật"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Giá: 20.000đ – 44.000đ"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:text="Mô tả: Phở 270 sở hữu vẻ đẹp bình lặng, yên ả giữa phố phường náo nhiệt.
+Món phở ở quán có dư vị rất thanh, nước lèo ngọt ngọt béo béo được
+hầm từ xương thịt chứ không phải bột ngọt, thịt mềm không dai, bạn
+cũng có thể gọi thêm hột gà nước tiết hay trà đá .Điểm cộng cho phở
+270 là cô chú phục vụ rất tận tình và vui vẻ, không gian quán bình
+dân mà chất lượng lại không thể ngờ. "
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/home_off"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/discovery_on"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/bookmark_off"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/profile_off"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
