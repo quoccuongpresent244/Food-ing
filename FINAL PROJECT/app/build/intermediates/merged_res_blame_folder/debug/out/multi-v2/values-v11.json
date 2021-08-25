@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\quocc\\.gradle\\caches\\transforms-2\\files-2.1\\16f24ff130d034c173450b92a2468f04\\jetified-play-services-appinvite-12.0.1\\res\\values-v11\\values.xml",
+                    "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\fb40f59d81e2728cfb80ba8e1002c013\\jetified-play-services-appinvite-12.0.1\\res\\values-v11\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

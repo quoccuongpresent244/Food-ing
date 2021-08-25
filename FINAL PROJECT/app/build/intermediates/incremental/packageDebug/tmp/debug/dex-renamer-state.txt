@@ -1,14 +1,14 @@
-#Fri Aug 20 16:22:35 ICT 2021
+#Fri Aug 20 20:11:50 ICT 2021
 path.4=classes2.dex
 path.3=6/classes.dex
 path.2=4/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=D\:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.3=D\:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.2=D\:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.1=D\:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=D\:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.4=D\:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.3=D\:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.2=D\:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.1=D\:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=D\:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
