@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -58,5 +59,181 @@
     {
         "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+=======
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_on.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\home_on.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_off.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\home_off.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_off.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\profile_off.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_near.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\near.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_discovery.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_discovery.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_arrow.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\button_arrow.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_near1.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\near1.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_custom_accept_location.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\button_custom_accept_location.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_anhdemo.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\anhdemo.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_discovery_on.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\discovery_on.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_hello.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_hello.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\background.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_custom_near_by.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\button_custom_near_by.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background1.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\background1.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_demo_home1.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\demo_home1.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bookmark_on.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\bookmark_on.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bookmark.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_bookmark.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_demo_home.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\demo_home.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_test1.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\test1.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile_on.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\profile_on.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_discovery_off.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\discovery_off.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_discovery2.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_discovery2.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\img.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bookmark_off.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\bookmark_off.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nearby_butto1.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\nearby_butto1.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nearby_button.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\nearby_button.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_restaurant_item.xml.flat",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\restaurant_item.xml"
+>>>>>>> 53bac34596ef84113f5522558ab255e333bea1f7
     }
 ]
