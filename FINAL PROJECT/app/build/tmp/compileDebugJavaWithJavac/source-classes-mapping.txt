@@ -1,13 +1,27 @@
-com/example/mapstest/MapsActivity.java
- com.example.mapstest.MapsActivity
- com.example.mapstest.MapsActivity$1
+com/example/mapstest/databinding/ActivityProfileBinding.java
+ com.example.mapstest.databinding.ActivityProfileBinding
+com/example/mapstest/databinding/RestaurantItemBinding.java
+ com.example.mapstest.databinding.RestaurantItemBinding
 com/example/mapstest/GetNearbyPlacesData.java
  com.example.mapstest.GetNearbyPlacesData
 com/example/mapstest/BuildConfig.java
  com.example.mapstest.BuildConfig
 com/example/mapstest/DataParser.java
  com.example.mapstest.DataParser
-com/example/mapstest/databinding/ActivityMapsBinding.java
- com.example.mapstest.databinding.ActivityMapsBinding
 com/example/mapstest/DownloadUrl.java
  com.example.mapstest.DownloadUrl
+com/example/mapstest/databinding/ActivityBookmarkBinding.java
+ com.example.mapstest.databinding.ActivityBookmarkBinding
+com/example/mapstest/databinding/ActivityHelloBinding.java
+ com.example.mapstest.databinding.ActivityHelloBinding
+com/example/mapstest/databinding/ActivityHomeBinding.java
+ com.example.mapstest.databinding.ActivityHomeBinding
+com/example/mapstest/MapsActivity.java
+ com.example.mapstest.MapsActivity
+ com.example.mapstest.MapsActivity$1
+com/example/mapstest/databinding/ActivityDiscoveryBinding.java
+ com.example.mapstest.databinding.ActivityDiscoveryBinding
+com/example/mapstest/databinding/ActivityMapsBinding.java
+ com.example.mapstest.databinding.ActivityMapsBinding
+com/example/mapstest/databinding/ActivityDiscovery2Binding.java
+ com.example.mapstest.databinding.ActivityDiscovery2Binding

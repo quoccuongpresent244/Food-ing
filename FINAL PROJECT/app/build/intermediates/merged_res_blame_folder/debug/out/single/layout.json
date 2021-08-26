@@ -1,6 +1,34 @@
 [
     {
-        "merged": "D:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_maps.xml",
-        "source": "D:\\QUOC\\UNIVERSITY\\HCMUS\\Year2\\Sem3\\CS426\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_maps.xml"
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_maps.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_discovery2.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_discovery2.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\restaurant_item.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\restaurant_item.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_discovery.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_discovery.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_hello.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_hello.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_profile.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_bookmark.xml",
+        "source": "D:\\Github\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\activity_bookmark.xml"
     }
 ]
