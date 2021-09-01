@@ -1,0 +1,111 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.cameraview"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml
+10
+11    <supports-screens
+11-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:5:5-10:39
+12        android:anyDensity="true"
+12-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:6:9-34
+13        android:largeScreens="true"
+13-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:7:9-36
+14        android:normalScreens="true"
+14-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:8:9-37
+15        android:resizeable="true"
+15-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:9:9-34
+16        android:smallScreens="true" />
+16-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:10:9-36
+17
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:12:5-65
+18-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:12:22-62
+19
+20    <uses-feature
+20-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:14:5-16:36
+21        android:name="android.hardware.camera"
+21-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:15:9-47
+22        android:required="false" />
+22-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:16:9-33
+23    <uses-feature
+23-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:17:5-19:36
+24        android:name="android.hardware.camera.autofocus"
+24-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:18:9-57
+25        android:required="false" />
+25-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:19:9-33
+26    <uses-feature
+26-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:20:5-22:36
+27        android:name="android.hardware.camera.front"
+27-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:21:9-53
+28        android:required="false" />
+28-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:22:9-33
+29    <uses-feature
+29-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:23:5-25:36
+30        android:name="android.hardware.camera.front.autofocus"
+30-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:24:9-63
+31        android:required="false" />
+31-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:25:9-33
+32
+33    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+34    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+36
+37    <application
+37-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:27:5-50:19
+38        android:allowBackup="true"
+38-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:28:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.5.0] C:\Users\quocc\.gradle\caches\transforms-2\files-2.1\07adfc08fe16d3453ab9291511ec05fe\core-1.5.0\AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+41        android:extractNativeLibs="false"
+42        android:icon="@mipmap/ic_launcher"
+42-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:29:9-43
+43        android:label="@string/app_name"
+43-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:30:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:31:9-54
+45        android:supportsRtl="true"
+45-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:32:9-35
+46        android:testOnly="true"
+47        android:theme="@style/Theme.CameraView" >
+47-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:33:9-48
+48        <activity android:name="com.example.cameraview.MainActivity2" >
+48-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:34:9-40:20
+48-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:34:19-48
+49            <intent-filter>
+49-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:35:13-39:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:36:17-69
+50-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:36:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:38:17-77
+52-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:38:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity android:name="com.example.cameraview.Gallery" />
+55-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:41:9-45
+55-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:41:19-42
+56        <activity
+56-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:42:9-46:74
+57            android:name="com.example.cameraview.CameraActivity"
+57-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:43:13-43
+58            android:configChanges="keyboardHidden|orientation"
+58-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:44:13-63
+59            android:screenOrientation="fullSensor"
+59-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:45:13-51
+60            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+60-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:46:13-71
+61        <activity android:name="com.example.cameraview.MainActivity" >
+61-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:47:9-49:20
+61-->D:\QUOC\UNIVERSITY\HCMUS\Year2\Sem3\CS426\Github\CS426_MaiLaAnhEm\CameraView\app\src\main\AndroidManifest.xml:47:19-47
+62        </activity>
+63    </application>
+64
+65</manifest>

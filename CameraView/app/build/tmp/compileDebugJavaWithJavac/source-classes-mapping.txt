@@ -1,0 +1,49 @@
+com/example/cameraview/HistoryItem.java
+ com.example.cameraview.HistoryItem
+com/example/cameraview/AgeGenderRecognition.java
+ com.example.cameraview.AgeGenderRecognition
+com/example/cameraview/BuildConfig.java
+ com.example.cameraview.BuildConfig
+com/example/cameraview/HomeFragment.java
+ com.example.cameraview.HomeFragment
+com/example/cameraview/EmotionRecognition.java
+ com.example.cameraview.EmotionRecognition
+com/example/cameraview/SettingFragment.java
+ com.example.cameraview.SettingFragment
+com/example/cameraview/ImageCapture.java
+ com.example.cameraview.ImageCapture
+com/example/cameraview/Gallery.java
+ com.example.cameraview.Gallery
+ com.example.cameraview.Gallery$1
+ com.example.cameraview.Gallery$2
+com/example/cameraview/MainActivity.java
+ com.example.cameraview.MainActivity
+ com.example.cameraview.MainActivity$1
+com/example/cameraview/Database.java
+ com.example.cameraview.Database
+com/example/cameraview/FavoriteFragment.java
+ com.example.cameraview.FavoriteFragment
+com/example/cameraview/HistoryAdapter.java
+ com.example.cameraview.HistoryAdapter
+ com.example.cameraview.HistoryAdapter$1
+ com.example.cameraview.HistoryAdapter$ViewHolder
+com/example/cameraview/MainActivity2.java
+ com.example.cameraview.MainActivity2
+ com.example.cameraview.MainActivity2$1
+ com.example.cameraview.MainActivity2$2
+ com.example.cameraview.MainActivity2$3
+ com.example.cameraview.MainActivity2$4
+ com.example.cameraview.MainActivity2$5
+com/example/cameraview/GalleryFragment.java
+ com.example.cameraview.GalleryFragment
+com/example/cameraview/CameraActivity.java
+ com.example.cameraview.CameraActivity
+ com.example.cameraview.CameraActivity$1
+ com.example.cameraview.CameraActivity$2
+ com.example.cameraview.CameraActivity$3
+ com.example.cameraview.CameraActivity$4
+ com.example.cameraview.CameraActivity$5
+com/example/cameraview/FavAdapter.java
+ com.example.cameraview.FavAdapter
+ com.example.cameraview.FavAdapter$1
+ com.example.cameraview.FavAdapter$ViewHolder
