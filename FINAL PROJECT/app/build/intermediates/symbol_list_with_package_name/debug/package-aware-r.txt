@@ -99,6 +99,7 @@ attr activityChooserViewStyle
 attr adSize
 attr adSizes
 attr adUnitId
+attr additionalFlipsCount
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -110,6 +111,7 @@ attr alphabeticModifiers
 attr altSrc
 attr ambientEnabled
 attr animate_relativeTo
+attr animationDuration
 attr animationMode
 attr appBarLayoutStyle
 attr appTheme
@@ -125,6 +127,7 @@ attr autoSizePresetSizes
 attr autoSizeStepGranularity
 attr autoSizeTextType
 attr autoTransition
+attr backSideColor
 attr background
 attr backgroundColor
 attr backgroundInsetBottom
@@ -191,6 +194,7 @@ attr buyButtonHeight
 attr buyButtonText
 attr buyButtonWidth
 attr cameraBearing
+attr cameraHeight
 attr cameraMaxZoomPreference
 attr cameraMinZoomPreference
 attr cameraTargetLat
@@ -1314,8 +1318,11 @@ color place_autocomplete_prediction_secondary_text
 color place_autocomplete_search_hint
 color place_autocomplete_search_text
 color place_autocomplete_separator
+color primary
+color primary_dark
 color primary_dark_material_dark
 color primary_dark_material_light
+color primary_light
 color primary_material_dark
 color primary_material_light
 color primary_text_default_material_dark
@@ -1328,6 +1335,9 @@ color purple_700
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
+color secondary
+color secondary_dark
+color secondary_light
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -1343,6 +1353,7 @@ color teal_200
 color teal_700
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color text
 color tooltip_background_dark
 color tooltip_background_light
 color wallet_bright_foreground_disabled_holo_light
@@ -1912,8 +1923,9 @@ drawable abc_vector_test
 drawable anhdemo
 drawable avd_hide_password
 drawable avd_show_password
-drawable background
 drawable background1
+drawable background_hello
+drawable background_home
 drawable bookmark_off
 drawable bookmark_on
 drawable btn_checkbox_checked_mtrl
@@ -1925,6 +1937,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_arrow
+drawable button_bg
 drawable button_custom_accept_location
 drawable button_custom_near_by
 drawable cast_abc_scrubber_control_off_mtrl_alpha
@@ -2009,6 +2022,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable discovery_off
 drawable discovery_on
+drawable floating
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable home_off
@@ -2059,6 +2073,8 @@ drawable ic_media_play_dark
 drawable ic_media_play_light
 drawable ic_media_stop_dark
 drawable ic_media_stop_light
+drawable ic_menu
+drawable ic_menu_rev
 drawable ic_mr_button_connected_00_dark
 drawable ic_mr_button_connected_00_light
 drawable ic_mr_button_connected_01_dark
@@ -2417,7 +2433,11 @@ id bottom
 id bounce
 id btnRes
 id button
+id button1
 id button2
+id button3
+id button4
+id buttonBegin
 id buttonPanel
 id button_0
 id button_1
@@ -2526,6 +2546,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
+id expandable_view
 id expanded_controller_layout
 id expanded_menu
 id fade
@@ -2574,7 +2595,6 @@ id image
 id imageButton5
 id imageView10
 id imageView11
-id imageView13
 id imageView2
 id imageView3
 id imageView8
@@ -2596,6 +2616,7 @@ id jumpToStart
 id labeled
 id large_icon_uri
 id layout
+id layout_tag
 id left
 id leftToRight
 id light
@@ -2633,6 +2654,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id media_actions
+id menu_button
 id message
 id middle
 id mini
@@ -2762,6 +2784,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id rfc822
 id right
@@ -2865,8 +2888,6 @@ id textSpacerNoTitle
 id textStart
 id textTitle
 id textTop
-id textView
-id textView2
 id textView3
 id textView4
 id textView5
@@ -2887,7 +2908,9 @@ id thing_proto
 id time
 id title
 id titleDividerNoCustom
+id title_menu
 id title_template
+id title_text
 id title_view
 id toggle
 id toolbar
@@ -2908,6 +2931,7 @@ id unlabeled
 id up
 id url
 id useLogo
+id viewPager
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
@@ -3000,7 +3024,7 @@ layout activity_bookmark
 layout activity_discovery
 layout activity_discovery2
 layout activity_hello
-layout activity_home
+layout activity_main
 layout activity_maps
 layout activity_profile
 layout cast_expanded_controller_activity
@@ -3025,6 +3049,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_home
+layout item
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -3227,6 +3253,7 @@ string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
 string gcm_fallback_notification_channel_label
 string google_maps_key
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -4140,6 +4167,7 @@ styleable FeatureParam paramName paramValue
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing
+styleable FoldingCell additionalFlipsCount animationDuration backSideColor cameraHeight
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
