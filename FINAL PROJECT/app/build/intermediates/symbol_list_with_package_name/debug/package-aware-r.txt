@@ -2592,10 +2592,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton5
 id imageView10
 id imageView11
-id imageView2
 id imageView3
 id imageView8
 id imageView9
@@ -2888,7 +2886,6 @@ id textSpacerNoTitle
 id textStart
 id textTitle
 id textTop
-id textView3
 id textView4
 id textView5
 id textView6
@@ -3022,7 +3019,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bookmark
 layout activity_discovery
-layout activity_discovery2
 layout activity_hello
 layout activity_main
 layout activity_maps
