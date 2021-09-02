@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\22802dacf04f55d4b2f1e49dd6e93e62\\core-1.7.0-alpha01\\res\\values-en-rGB\\values-en-rGB.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "177",
-                        "startColumns": "4",
-                        "startOffsets": "16804",
-                        "endColumns": "100",
-                        "endOffsets": "16900"
-                    }
-                },
-                {
                     "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\bc3af160fd2a81577f088467779d1605\\jetified-play-services-basement-12.0.1\\res\\values-en-rGB\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -207,6 +190,23 @@
                         "startOffsets": "16905",
                         "endColumns": "103",
                         "endOffsets": "17004"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\f28541d38336eef947b61508e13772f3\\core-1.7.0-alpha02\\res\\values-en-rGB\\values-en-rGB.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "177",
+                        "startColumns": "4",
+                        "startOffsets": "16804",
+                        "endColumns": "100",
+                        "endOffsets": "16900"
                     }
                 },
                 {

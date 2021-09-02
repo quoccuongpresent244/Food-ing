@@ -7,7 +7,7 @@
 7    <uses-sdk
 8        android:minSdkVersion="22"
 8-->D:\Android\CS426_MaiLaAnhEm\FINAL PROJECT\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="30" />
+9        android:targetSdkVersion="31" />
 9-->D:\Android\CS426_MaiLaAnhEm\FINAL PROJECT\app\src\main\AndroidManifest.xml
 10    <!--
 11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -56,7 +56,7 @@
 33        android:allowBackup="true"
 33-->D:\Android\CS426_MaiLaAnhEm\FINAL PROJECT\app\src\main\AndroidManifest.xml:14:9-35
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-34-->[androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:24:18-86
+34-->[androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:24:18-86
 35        android:debuggable="true"
 36        android:icon="@mipmap/ic_launcher"
 36-->D:\Android\CS426_MaiLaAnhEm\FINAL PROJECT\app\src\main\AndroidManifest.xml:15:9-43

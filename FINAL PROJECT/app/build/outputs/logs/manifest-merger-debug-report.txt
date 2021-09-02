@@ -63,7 +63,7 @@ MERGED from [com.google.android.gms:play-services-gass:12.0.1] C:\Users\maiqu\.g
 MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\76ade80deadef39d32ada523fde22de0\jetified-play-services-tasks-12.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\bc3af160fd2a81577f088467779d1605\jetified-play-services-basement-12.0.1\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\233f29e05d3f62c91d94717ecf57158d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\2600197da3344d717a36fd0747cb53d6\jetified-core-ktx-1.7.0-alpha01\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core-ktx:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\82fb34a2c888a2a61f3e24b9ca4046ca\jetified-core-ktx-1.7.0-alpha02\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\b913b577636afb646741ffd904028e15\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\5511f57e160c7e247f5d805a7544c561\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -89,7 +89,7 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\maiqu\
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\3438716bbde0c4ae93b6b3ca42413f5c\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\a4aa212df090916fdc5167a61460eb35\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\d7ef7342eb80ff707691a83b9012e6a9\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\5b22b0456eb746581b5b739357fde86e\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\2173da8f0e3b2f5d6ed51ddfa294cf15\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\204d56b624e751e7990ccfa8a11e8889\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -296,8 +296,8 @@ MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\maiqu\.
 MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\76ade80deadef39d32ada523fde22de0\jetified-play-services-tasks-12.0.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\bc3af160fd2a81577f088467779d1605\jetified-play-services-basement-12.0.1\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\bc3af160fd2a81577f088467779d1605\jetified-play-services-basement-12.0.1\AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\9c1a19876166723a3f4a522f5e580c9e\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\9c1a19876166723a3f4a522f5e580c9e\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.gms:play-services-ads-license:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\5aa8bb56599278a5a2bd939fc214f4b4\jetified-play-services-ads-license-12.0.1\AndroidManifest.xml:22:5-20
@@ -401,7 +401,7 @@ MERGED from [com.google.android.gms:play-services-wallet-license:12.0.1] C:\User
 MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\771c34e7aba91ad39a0a1c963d1278cb\jetified-play-services-wearable-license-12.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\771c34e7aba91ad39a0a1c963d1278cb\jetified-play-services-wearable-license-12.0.1\AndroidManifest.xml:22:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:24:18-86
 	android:supportsRtl
 		ADDED from D:\Android\CS426_MaiLaAnhEm\FINAL PROJECT\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
@@ -576,8 +576,8 @@ MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\maiq
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\bc3af160fd2a81577f088467779d1605\jetified-play-services-basement-12.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\233f29e05d3f62c91d94717ecf57158d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\233f29e05d3f62c91d94717ecf57158d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\2600197da3344d717a36fd0747cb53d6\jetified-core-ktx-1.7.0-alpha01\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\2600197da3344d717a36fd0747cb53d6\jetified-core-ktx-1.7.0-alpha01\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\82fb34a2c888a2a61f3e24b9ca4046ca\jetified-core-ktx-1.7.0-alpha02\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\82fb34a2c888a2a61f3e24b9ca4046ca\jetified-core-ktx-1.7.0-alpha02\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\b913b577636afb646741ffd904028e15\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\b913b577636afb646741ffd904028e15\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\9f5395c9e2c4a1a11a43e64f5d81258c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -628,8 +628,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\maiq
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\a4aa212df090916fdc5167a61460eb35\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\d7ef7342eb80ff707691a83b9012e6a9\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\d7ef7342eb80ff707691a83b9012e6a9\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.7.0-alpha01] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\22802dacf04f55d4b2f1e49dd6e93e62\core-1.7.0-alpha01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0-alpha02] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\f28541d38336eef947b61508e13772f3\core-1.7.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\5b22b0456eb746581b5b739357fde86e\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\5b22b0456eb746581b5b739357fde86e\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\maiqu\.gradle\caches\transforms-2\files-2.1\2173da8f0e3b2f5d6ed51ddfa294cf15\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41

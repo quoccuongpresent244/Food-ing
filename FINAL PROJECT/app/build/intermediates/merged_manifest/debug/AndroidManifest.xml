@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="22"
-        android:targetSdkVersion="30" />
+        android:targetSdkVersion="31" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine

@@ -176,6 +176,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\f28541d38336eef947b61508e13772f3\\core-1.7.0-alpha02\\res\\values-sl\\values-sl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "179",
+                        "startColumns": "4",
+                        "startOffsets": "17553",
+                        "endColumns": "100",
+                        "endOffsets": "17649"
+                    }
+                },
+                {
                     "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\24f265110b0750ba08f806f95097b9e4\\jetified-play-services-cast-12.0.1\\res\\values-sl\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7",
@@ -190,23 +207,6 @@
                         "startOffsets": "5039,5197,5345,5447",
                         "endColumns": "157,147,101,103",
                         "endOffsets": "5192,5340,5442,5546"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\maiqu\\.gradle\\caches\\transforms-2\\files-2.1\\22802dacf04f55d4b2f1e49dd6e93e62\\core-1.7.0-alpha01\\res\\values-sl\\values-sl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "179",
-                        "startColumns": "4",
-                        "startOffsets": "17553",
-                        "endColumns": "100",
-                        "endOffsets": "17649"
                     }
                 },
                 {
