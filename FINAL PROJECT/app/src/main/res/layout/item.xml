@@ -56,9 +56,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:animateLayoutChanges="true"
-                android:background="@color/secondary"
-                android:orientation="vertical">
-
+                android:background="@color/secondary_dark"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phở 270 – Quán Phở Ngon Ở Sài Gòn"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ: 276/7 Hòa Hưng, P.13,  Quận 10, TP. HCM"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giờ mở cửa: Đang cập nhật"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá: 20.000đ – 44.000đ"
+                    android:textSize="18dp"/>
 
             </LinearLayout>
 
