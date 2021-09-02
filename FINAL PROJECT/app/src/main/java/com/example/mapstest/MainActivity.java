@@ -52,7 +52,6 @@ public class MainActivity extends FragmentActivity {
         pagerAdapter = new ScreenSlidePagerAdapter(this);
         viewPager.setAdapter(pagerAdapter);
 
-
         button = new ImageView[4];
         button[0] = findViewById(R.id.button1);
         button[1] = findViewById(R.id.button2);
@@ -127,8 +126,8 @@ public class MainActivity extends FragmentActivity {
             public void onPageSelected(int position) {
                 menu.setImageDrawable(menuAnimate);
                 menuAnimate.start();
-
                 setButton(true);
+
                 titleMenu.animate().scaleX(0.0f)
                         .setListener(new Animator.AnimatorListener() {
                             @Override public void onAnimationStart(Animator animation) {}
@@ -145,7 +144,9 @@ public class MainActivity extends FragmentActivity {
     }
 
     private void playAnimation(int position) {
-
+        pagerAdapter = (FragmentStateAdapter) pagerAdapter;
+        HomePage homePage = (HomePage) pagerAdapter.createFragment(position);
+        homePage.setAnimation(R.anim.layout_animation);
     }
 
     private class MyAnimatorListener implements Animator.AnimatorListener {
@@ -199,18 +200,28 @@ public class MainActivity extends FragmentActivity {
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
+        public HomePage homePage1 = new HomePage();
+        public HomePage homePage2 = new HomePage();
+        public HomePage homePage3 = new HomePage();
+        public HomePage homePage4 = new HomePage();
+
         public ScreenSlidePagerAdapter(FragmentActivity fa) {
             super(fa);
         }
 
         @Override
         public Fragment createFragment(int position) {
-            return new HomePage();
+            if(position == 0) return homePage1;
+            if(position == 1) return homePage2;
+            if(position == 2) return homePage3;
+            return homePage4;
         }
 
         @Override
         public int getItemCount() {
             return 4;
         }
+
+
     }
 }

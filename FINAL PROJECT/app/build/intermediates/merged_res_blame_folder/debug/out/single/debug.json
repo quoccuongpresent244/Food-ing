@@ -72,6 +72,10 @@
         "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\nearby_butto1.png"
     },
     {
+        "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\anim_right_to_left.xml.flat",
+        "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\anim\\right_to_left.xml"
+    },
+    {
         "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\layout_restaurant_item.xml.flat",
         "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\layout\\restaurant_item.xml"
     },
@@ -118,6 +122,10 @@
     {
         "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home_off.png.flat",
         "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\drawable\\home_off.png"
+    },
+    {
+        "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\anim_layout_animation.xml.flat",
+        "source": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\src\\main\\res\\anim\\layout_animation.xml"
     },
     {
         "merged": "D:\\Android\\CS426_MaiLaAnhEm\\FINAL PROJECT\\app\\build\\intermediates\\res\\merged\\debug\\drawable_near1.png.flat",

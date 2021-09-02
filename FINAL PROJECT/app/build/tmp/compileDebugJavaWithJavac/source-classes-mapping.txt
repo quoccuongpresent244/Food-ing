@@ -6,25 +6,20 @@ com/example/mapstest/BuildConfig.java
  com.example.mapstest.BuildConfig
 com/example/mapstest/GetNearbyPlacesData.java
  com.example.mapstest.GetNearbyPlacesData
-com/example/mapstest/HelloActivity.java
- com.example.mapstest.HelloActivity
- com.example.mapstest.HelloActivity$1
+com/example/mapstest/databinding/ActivityMapsBinding.java
+ com.example.mapstest.databinding.ActivityMapsBinding
 com/example/mapstest/databinding/ActivityProfileBinding.java
  com.example.mapstest.databinding.ActivityProfileBinding
 com/example/mapstest/databinding/RestaurantItemBinding.java
  com.example.mapstest.databinding.RestaurantItemBinding
-com/example/mapstest/MainActivity.java
- com.example.mapstest.MainActivity
- com.example.mapstest.MainActivity$1
- com.example.mapstest.MainActivity$2
- com.example.mapstest.MainActivity$3
- com.example.mapstest.MainActivity$3$1
- com.example.mapstest.MainActivity$MyAnimatorListener
- com.example.mapstest.MainActivity$ScreenSlidePagerAdapter
-com/example/mapstest/databinding/ActivityMapsBinding.java
- com.example.mapstest.databinding.ActivityMapsBinding
 com/example/mapstest/databinding/ActivityDiscoveryBinding.java
  com.example.mapstest.databinding.ActivityDiscoveryBinding
+com/example/mapstest/Adapter.java
+ com.example.mapstest.Adapter
+ com.example.mapstest.Adapter$1
+ com.example.mapstest.Adapter$MyViewHolder
+com/example/mapstest/databinding/ItemBinding.java
+ com.example.mapstest.databinding.ItemBinding
 com/example/mapstest/databinding/ActivityBookmarkBinding.java
  com.example.mapstest.databinding.ActivityBookmarkBinding
 com/example/mapstest/databinding/ActivityMainBinding.java
@@ -40,9 +35,14 @@ com/example/mapstest/MapsActivity.java
  com.example.mapstest.MapsActivity$1
 com/example/mapstest/HomePage.java
  com.example.mapstest.HomePage
-com/example/mapstest/Adapter.java
- com.example.mapstest.Adapter
- com.example.mapstest.Adapter$1
- com.example.mapstest.Adapter$MyViewHolder
-com/example/mapstest/databinding/ItemBinding.java
- com.example.mapstest.databinding.ItemBinding
+com/example/mapstest/HelloActivity.java
+ com.example.mapstest.HelloActivity
+ com.example.mapstest.HelloActivity$1
+com/example/mapstest/MainActivity.java
+ com.example.mapstest.MainActivity
+ com.example.mapstest.MainActivity$1
+ com.example.mapstest.MainActivity$2
+ com.example.mapstest.MainActivity$3
+ com.example.mapstest.MainActivity$3$1
+ com.example.mapstest.MainActivity$MyAnimatorListener
+ com.example.mapstest.MainActivity$ScreenSlidePagerAdapter
