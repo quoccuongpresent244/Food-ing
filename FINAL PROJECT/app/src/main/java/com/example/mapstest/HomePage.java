@@ -28,7 +28,6 @@ public class HomePage extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-
         return view;
     }
 
