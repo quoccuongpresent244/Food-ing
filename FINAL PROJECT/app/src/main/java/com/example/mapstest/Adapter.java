@@ -45,11 +45,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             }
         });
 
-       // holder.titleText.setText(data.get(position).getName());
-
-
-
-
+        holder.titleText.setText(data.get(position).getName());
+        holder.addressText.setText(data.get(position).getVicinity());
+        holder.hourText.setText(
+                    (!data.get(position).getOpen_now().equals("false"))?
+                            "OPEN" : "CLOSE"
+                );
+        holder.userRatingText.setText(data.get(position).getUser_ratings_total());
+        holder.ratingText.setText(data.get(position).getRating());
     }
 
     @Override
@@ -64,7 +67,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         private LinearLayout expandableView;
         private FrameLayout title;
         private LinearLayout layout;
-        private TextView titleText;
+        private TextView titleText, addressText, hourText, userRatingText, ratingText, distanceText;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -74,7 +77,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             layout.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
             titleText = itemView.findViewById(R.id.title_text);
-
+            addressText = itemView.findViewById(R.id.address);
+            hourText = itemView.findViewById(R.id.hour_open);
+            userRatingText = itemView.findViewById(R.id.user_rating);
+            ratingText = itemView.findViewById(R.id.rating);
         }
     }
 }
