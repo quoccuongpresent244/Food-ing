@@ -53,6 +53,13 @@ public class DataParser {
         HashMap<String, String> googlePlaceMap = new HashMap<String, String>();
         String placeName = "-NA-";
         String vicinity = "-NA-";
+        String phoneNumber = "";
+        String photoRef = "";
+        Boolean open_now = false;
+        double rating = 0;
+        int user_ratings_total = 0;
+
+
         String latitude = "";
         String longitude = "";
         String reference = "";
@@ -66,11 +73,28 @@ public class DataParser {
             if (!googlePlaceJson.isNull("vicinity")) {
                 vicinity = googlePlaceJson.getString("vicinity");
             }
+
+
+            if(!googlePlaceJson.isNull("opening_hours")){
+                open_now = googlePlaceJson.getJSONObject("opening_hours").getBoolean("open_now");
+            }
+            if (!googlePlaceJson.isNull("rating")){
+                rating = googlePlaceJson.getDouble("rating");
+            }
+            if (!googlePlaceJson.isNull("user_ratings_total")){
+                user_ratings_total = googlePlaceJson.getInt("user_ratings_total");
+            }
+
             latitude = googlePlaceJson.getJSONObject("geometry").getJSONObject("location").getString("lat");
             longitude = googlePlaceJson.getJSONObject("geometry").getJSONObject("location").getString("lng");
             reference = googlePlaceJson.getString("reference");
             googlePlaceMap.put("place_name", placeName);
             googlePlaceMap.put("vicinity", vicinity);
+
+            googlePlaceMap.put("open_now", open_now.toString());
+            googlePlaceMap.put("rating", String.valueOf(rating));
+            googlePlaceMap.put("user_ratings_total", String.valueOf((user_ratings_total)));
+
             googlePlaceMap.put("lat", latitude);
             googlePlaceMap.put("lng", longitude);
             googlePlaceMap.put("reference", reference);

@@ -11,6 +11,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -32,6 +33,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             DownloadUrl downloadUrl = new DownloadUrl();
             googlePlacesData = downloadUrl.readUrl(url);
             Log.d("GooglePlacesReadTask", "doInBackground Exit");
+            Log.d("GooglePlacesReadTask", googlePlacesData);
         } catch (Exception e) {
             Log.d("GooglePlacesReadTask", e.toString());
         }
@@ -49,6 +51,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
     }
 
     private void ShowNearbyPlaces(List<HashMap<String, String>> nearbyPlacesList) {
+        ArrayList<PlaceInfo> placeInfoList = new ArrayList<>();
         for (int i = 0; i < nearbyPlacesList.size(); i++) {
             Log.d("onPostExecute","Entered into showing locations");
             MarkerOptions markerOptions = new MarkerOptions();
@@ -57,6 +60,13 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             double lng = Double.parseDouble(googlePlace.get("lng"));
             String placeName = googlePlace.get("place_name");
             String vicinity = googlePlace.get("vicinity");
+            String rating = googlePlace.get("rating");
+            String open_now = googlePlace.get("open_now");
+            String user_ratings_total = googlePlace.get("user_ratings_total");
+            //String phoneNumber = googlePlace.get("phone_number");
+
+            placeInfoList.add(new PlaceInfo(placeName, vicinity, rating, open_now, user_ratings_total));
+
             LatLng latLng = new LatLng(lat, lng);
             markerOptions.position(latLng);
             markerOptions.title(placeName + " : " + vicinity);
