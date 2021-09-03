@@ -2,6 +2,7 @@ package com.example.mapstest;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
@@ -128,6 +129,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
                 getNearbyPlacesData.execute(DataTransfer);
                 Toast.makeText(MapsActivity.this,"Nearby Restaurants", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Button btnList = (Button) findViewById(R.id.btnList);
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

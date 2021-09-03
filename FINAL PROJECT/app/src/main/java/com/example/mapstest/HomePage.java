@@ -12,10 +12,9 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 
-import com.ramotion.foldingcell.FoldingCell;
-
 public class HomePage extends Fragment {
     RecyclerView recyclerView;
+    ListData listData;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +23,11 @@ public class HomePage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        listData = ListData.getInstance();
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
 
         return view;
     }
@@ -36,7 +37,7 @@ public class HomePage extends Fragment {
                 = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_animation);
         recyclerView.setLayoutAnimation(layoutAnimationController);
 
-        Adapter adapter = new Adapter();
-        recyclerView.setAdapter(adapter);
+
+        recyclerView.setAdapter(listData.getAdapter());
     }
 }

@@ -1,26 +1,47 @@
 package com.example.mapstest;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.Manifest;
 import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.AnimationDrawable;
+import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends FragmentActivity {
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.Marker;
 
+public class MainActivity extends FragmentActivity{
+
+    private static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
     private AnimatedVectorDrawable menuAnimate;
     private AnimatedVectorDrawable menuAnimateRev;
     private boolean statusMenu = true;
@@ -44,6 +65,8 @@ public class MainActivity extends FragmentActivity {
         bindingObject();
         setOnClick();
     }
+
+
 
     private void bindingObject(){
         menu = findViewById(R.id.menu_button);
@@ -148,6 +171,8 @@ public class MainActivity extends FragmentActivity {
         HomePage homePage = (HomePage) pagerAdapter.createFragment(position);
         homePage.setAnimation(R.anim.layout_animation);
     }
+
+
 
     private class MyAnimatorListener implements Animator.AnimatorListener {
         private int TYPE;

@@ -3,7 +3,8 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
@@ -18,6 +19,13 @@
         android:layout_height="wrap_content"
         android:text="Nearby Restaurant"
         android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:text="Open list" />
 
 
 </FrameLayout>

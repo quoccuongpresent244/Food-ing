@@ -10,14 +10,21 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ramotion.foldingcell.FoldingCell;
+import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
+    private ArrayList<PlaceInfo> data;
+
+    public Adapter(ArrayList<PlaceInfo> data){
+        this.data = data;
+    }
+
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
@@ -37,17 +44,27 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
                 );
             }
         });
+
+       // holder.titleText.setText(data.get(position).getName());
+
+
+
+
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        if (data != null){
+            return data.size();
+        }
+        return 1;
     }
 
     protected class MyViewHolder extends  RecyclerView.ViewHolder{
         private LinearLayout expandableView;
         private FrameLayout title;
         private LinearLayout layout;
+        private TextView titleText;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -55,6 +72,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             title = itemView.findViewById(R.id.title);
             layout = itemView.findViewById(R.id.layout_tag);
             layout.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
+
+            titleText = itemView.findViewById(R.id.title_text);
+
         }
     }
 }
