@@ -74,7 +74,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         private FrameLayout title;
         private LinearLayout layout;
         private TextView titleText, addressText, hourText, userRatingText, ratingText, distanceText;
-        private TextView titleText;
+
         private ImageView photoView;
 
         public MyViewHolder(View itemView) {
