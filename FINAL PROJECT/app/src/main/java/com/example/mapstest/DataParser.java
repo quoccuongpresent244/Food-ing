@@ -58,6 +58,7 @@ public class DataParser {
         Boolean open_now = false;
         double rating = 0;
         int user_ratings_total = 0;
+        int price_level = -1;
 
 
         String latitude = "";
@@ -90,6 +91,10 @@ public class DataParser {
                 user_ratings_total = googlePlaceJson.getInt("user_ratings_total");
             }
 
+            if (!googlePlaceJson.isNull("price_level")){
+                price_level = googlePlaceJson.getInt("price_level");
+            }
+
             latitude = googlePlaceJson.getJSONObject("geometry").getJSONObject("location").getString("lat");
             longitude = googlePlaceJson.getJSONObject("geometry").getJSONObject("location").getString("lng");
             reference = googlePlaceJson.getString("reference");
@@ -100,6 +105,13 @@ public class DataParser {
             googlePlaceMap.put("open_now", open_now.toString());
             googlePlaceMap.put("rating", String.valueOf(rating));
             googlePlaceMap.put("user_ratings_total", String.valueOf((user_ratings_total)));
+
+            if (price_level != -1){
+                googlePlaceMap.put("price_level", String.valueOf(price_level));
+            }
+            else {
+                googlePlaceMap.put("price_level", "NA");
+            }
 
             googlePlaceMap.put("lat", latitude);
             googlePlaceMap.put("lng", longitude);
