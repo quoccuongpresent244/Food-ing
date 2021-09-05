@@ -1,11 +1,14 @@
 package com.example.mapstest;
 
+import android.graphics.Bitmap;
+
 import java.util.List;
 
 public class PlaceInfo {
     private String name;
     private String vicinity;
     private String phone;
+    private Bitmap photo;
     private String rating;
     private String website;
     private String open_now;
@@ -18,6 +21,14 @@ public class PlaceInfo {
         this.rating = rating;
         this.open_now = open_now;
         this.user_ratings_total = user_ratings_total;
+    }
+
+    public Bitmap getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(Bitmap photo) {
+        this.photo = photo;
     }
 
     public String getName() {

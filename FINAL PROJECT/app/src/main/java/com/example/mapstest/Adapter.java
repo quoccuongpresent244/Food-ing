@@ -45,7 +45,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             }
         });
 
-       // holder.titleText.setText(data.get(position).getName());
+        holder.photoView.setImageBitmap(data.get(position).getPhoto());
+       holder.titleText.setText(data.get(position).getName());
 
 
 
@@ -65,6 +66,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         private FrameLayout title;
         private LinearLayout layout;
         private TextView titleText;
+        private ImageView photoView;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -74,6 +76,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             layout.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
             titleText = itemView.findViewById(R.id.title_text);
+            photoView = itemView.findViewById(R.id.photo);
 
         }
     }

@@ -74,6 +74,11 @@ public class DataParser {
                 vicinity = googlePlaceJson.getString("vicinity");
             }
 
+            if (!googlePlaceJson.isNull("photos")){
+                JSONArray photos = googlePlaceJson.getJSONArray("photos");
+                photoRef = ((JSONObject)photos.get(0)).getString("photo_reference");
+
+            }
 
             if(!googlePlaceJson.isNull("opening_hours")){
                 open_now = googlePlaceJson.getJSONObject("opening_hours").getBoolean("open_now");
@@ -90,6 +95,7 @@ public class DataParser {
             reference = googlePlaceJson.getString("reference");
             googlePlaceMap.put("place_name", placeName);
             googlePlaceMap.put("vicinity", vicinity);
+            googlePlaceMap.put("photo_ref", photoRef);
 
             googlePlaceMap.put("open_now", open_now.toString());
             googlePlaceMap.put("rating", String.valueOf(rating));
