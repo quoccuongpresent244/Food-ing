@@ -77,7 +77,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             //Calculate distance
             float[] result = new float[1];
             Location.distanceBetween(currLat, currLong, lat, lng, result);
-            String distance = String.format("%.1f", result[0]/1000);
+            String distance = String.format("%.1f", result[0]/1000) + " km";
             Log.d("DISTANCE", distance);
 
             String placeName = googlePlace.get("place_name");
