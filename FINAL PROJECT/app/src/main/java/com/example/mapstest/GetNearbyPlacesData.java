@@ -1,6 +1,7 @@
 package com.example.mapstest;
 
 import android.graphics.Bitmap;
+import android.location.Location;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -25,6 +26,13 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
     GoogleMap mMap;
     String url;
     ListData listData;
+    double currLat;
+    double currLong;
+
+    public GetNearbyPlacesData(double lat, double Long){
+        currLat = lat;
+        currLong = Long;
+    }
 
     @Override
     protected String doInBackground(Object... params) {
@@ -65,6 +73,13 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             HashMap<String, String> googlePlace = nearbyPlacesList.get(i);
             double lat = Double.parseDouble(googlePlace.get("lat"));
             double lng = Double.parseDouble(googlePlace.get("lng"));
+
+            //Calculate distance
+            float[] result = new float[1];
+            Location.distanceBetween(currLat, currLong, lat, lng, result);
+            String distance = String.format("%.1f", result[0]/1000);
+            Log.d("DISTANCE", distance);
+
             String placeName = googlePlace.get("place_name");
             String vicinity = googlePlace.get("vicinity");
             String rating = googlePlace.get("rating");
@@ -79,7 +94,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             getImageBitmap.execute(urlTmp);
 
 
-            listData.placeInfoList.add(new PlaceInfo(placeName, vicinity, rating, open_now, user_ratings_total, price_level));
+            listData.placeInfoList.add(new PlaceInfo(placeName, vicinity, rating, open_now, user_ratings_total, price_level, distance));
 
             LatLng latLng = new LatLng(lat, lng);
             markerOptions.position(latLng);

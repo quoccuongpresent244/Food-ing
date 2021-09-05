@@ -14,15 +14,17 @@ public class PlaceInfo {
     private String open_now;
     private String user_ratings_total;
     private String price_level;
+    private String distance;
     static List<PlaceInfo> placeInfoList;
 
-    public PlaceInfo(String name, String vicinity, String rating, String open_now, String user_ratings_total, String price_level) {
+    public PlaceInfo(String name, String vicinity, String rating, String open_now, String user_ratings_total, String price_level, String distance) {
         this.name = name;
         this.vicinity = vicinity;
         this.rating = rating;
         this.open_now = open_now;
         this.user_ratings_total = user_ratings_total;
         this.price_level = price_level;
+        this.distance = distance;
     }
 
     public Bitmap getPhoto() {
