@@ -72,7 +72,7 @@
                         android:layout_marginStart="10dp"
                         android:text="Rate: "
                         android:textColor="@color/white"
-                        android:textSize="17dp" />
+                        android:textSize="20dp" />
                     <TextView
                         android:id="@+id/distance"
                         android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
                         android:layout_marginStart="10dp"
                         android:text="Distance: "
                         android:textColor="@color/white"
-                        android:textSize="17dp" />
+                        android:textSize="20dp" />
                     </LinearLayout>
                 </LinearLayout>
             </FrameLayout>
@@ -101,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Address: "
-                    android:textSize="16dp"
+                    android:textSize="20dp"
                     android:layout_marginTop="10dp"/>
 
                 <TextView
@@ -109,14 +109,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Status: "
-                    android:textSize="16dp" />
+                    android:textSize="20dp" />
 
                 <TextView
                     android:id="@+id/user_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phone Number: "
-                    android:textSize="15dp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
