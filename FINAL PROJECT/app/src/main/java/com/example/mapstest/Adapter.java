@@ -53,6 +53,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
                 );
         holder.userRatingText.setText(data.get(position).getUser_ratings_total());
         holder.ratingText.setText(data.get(position).getRating());
+        holder.photoView.setImageBitmap(data.get(position).getPhoto());
+        holder.titleText.setText(data.get(position).getName());
+
+
+
+
     }
 
     @Override
@@ -68,6 +74,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         private FrameLayout title;
         private LinearLayout layout;
         private TextView titleText, addressText, hourText, userRatingText, ratingText, distanceText;
+        private TextView titleText;
+        private ImageView photoView;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -81,6 +89,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             hourText = itemView.findViewById(R.id.hour_open);
             userRatingText = itemView.findViewById(R.id.user_rating);
             ratingText = itemView.findViewById(R.id.rating);
+            photoView = itemView.findViewById(R.id.photo);
+
         }
     }
 }
