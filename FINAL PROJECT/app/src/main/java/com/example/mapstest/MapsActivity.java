@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -48,6 +49,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Location mLastLocation;
     Marker mCurrLocationMarker;
     LocationRequest mLocationRequest;
+    boolean status = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,24 +116,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.setMyLocationEnabled(true);
         }
 
-        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+        //check mode
+        ImageView btnMode = (ImageView) findViewById(R.id.btnMode);
+        btnMode.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onMapClick(LatLng latLng) {
-
-                latitude = latLng.latitude;
-                longitude = latLng.longitude;
-
-                MarkerOptions markerOptions = new MarkerOptions();
-                markerOptions.position(latLng);
-                markerOptions.title("New position");
-                mMap.clear();
-
-                mMap.addMarker(markerOptions);
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+            public void onClick(View view) {
+                if (status == false){
+                    status = true;
+                    btnMode.setImageResource(R.drawable.init1);
+                }
+                else{
+                    status = false;
+                    btnMode.setImageResource(R.drawable.init2);
+                }
             }
         });
+            mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+                @Override
+                public void onMapClick(LatLng latLng) {
+                    if (status == false) {
+                        latitude = latLng.latitude;
+                        longitude = latLng.longitude;
 
-        Button btnRestaurant = (Button) findViewById(R.id.btnRes);
+                        MarkerOptions markerOptions = new MarkerOptions();
+                        markerOptions.position(latLng);
+                        markerOptions.title("New position");
+                        mMap.clear();
+
+                        mMap.addMarker(markerOptions);
+                        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+                    }
+                }
+            });
+
+
+        ImageView btnRestaurant = (ImageView) findViewById(R.id.btnRes);
         btnRestaurant.setOnClickListener(new View.OnClickListener() {
             String Restaurant = "restaurant";
             @Override
@@ -151,7 +170,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
 
-        Button btnList = (Button) findViewById(R.id.btnList);
+        ImageView btnList = (ImageView) findViewById(R.id.btnList);
         btnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -192,7 +211,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googlePlacesUrl.append("&radius=" + PROXIMITY_RADIUS);
         googlePlacesUrl.append("&type=" + nearbyPlace);
         googlePlacesUrl.append("&sensor=true");
-        googlePlacesUrl.append("&key=" + "AIzaSyCovhdbC1vTq6W7nF3JHdOZ_5GiMOudCSk");
+        googlePlacesUrl.append("&key=" + "AIzaSyD2ASQopIQa5HNRRf3EcU4UY2Kt6R-_Sno");
         Log.d("getUrl", googlePlacesUrl.toString());
         return (googlePlacesUrl.toString());
     }

@@ -23,4 +23,8 @@ public class ListData {
         adapter = new Adapter(this.placeInfoList);
         return adapter;
     }
+
+    public void resetData(){
+        placeInfoList = new ArrayList<>();
+    }
 }
