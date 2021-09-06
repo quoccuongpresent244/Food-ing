@@ -15,17 +15,21 @@
 
     <Button
         android:id="@+id/btnRes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nearby Restaurant"
-        android:layout_marginLeft="10dp"/>
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/nearby"
+        android:background="@drawable/custom_nearby_button"/>
 
     <Button
         android:id="@+id/btnList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="280dp"
-        android:text="Open list" />
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/openlist"
+        android:background="@drawable/custom_nearby_button" />
 
 
 </FrameLayout>

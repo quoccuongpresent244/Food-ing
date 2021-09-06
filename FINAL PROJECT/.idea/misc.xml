@@ -3,7 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/item.xml" value="0.1640625" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2765625" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/background_hello.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/button_bg.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/button_custom_accept_location.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/button_custom_near_by.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/custom_anhdemo.xml" value="0.35625" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/custom_nearby_button.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/floating.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/ic_menu.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/drawable/ic_menu_rev.xml" value="0.24166666666666667" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_bookmark.xml" value="0.17864583333333334" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_discovery.xml" value="0.17864583333333334" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_hello.xml" value="0.2" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_maps.xml" value="0.33" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_profile.xml" value="0.17864583333333334" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/fragment_home.xml" value="0.17864583333333334" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/item.xml" value="0.5" />
+        <entry key="..\:/Github/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/restaurant_item.xml" value="0.17864583333333334" />
       </map>
     </option>
   </component>
