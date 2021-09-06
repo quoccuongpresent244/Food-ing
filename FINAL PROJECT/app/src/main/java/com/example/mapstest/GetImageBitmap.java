@@ -27,7 +27,6 @@ public class GetImageBitmap extends AsyncTask<String, Integer, Bitmap> {
 
     @Override
     protected void onPostExecute(Bitmap bitmap) {
-        Log.d("hahahahahaha", "onPostExecute Entered");
         ListData listData = ListData.getInstance();
         listData.placeInfoList.get(index).setPhoto(bitmap);
     }
