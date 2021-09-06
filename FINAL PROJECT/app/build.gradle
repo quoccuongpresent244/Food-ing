@@ -46,4 +46,5 @@ dependencies {
     implementation "androidx.core:core-ktx:+"
 
     implementation 'com.google.android.gms:play-services:12.0.1'
+
 }

@@ -22,6 +22,9 @@ import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
@@ -104,8 +107,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         private LinearLayout layout;
         private TextView titleText, addressText, hourText, userRatingText, ratingText, distanceText;
         private ImageView photoView, goHereBtn;
-
-        
 
         public MyViewHolder(View itemView) {
             super(itemView);

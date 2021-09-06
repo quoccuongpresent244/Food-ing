@@ -149,9 +149,9 @@
                     android:layout_marginBottom="5dp"
                     android:layout_marginRight="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent">
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
-                </ImageView>
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
