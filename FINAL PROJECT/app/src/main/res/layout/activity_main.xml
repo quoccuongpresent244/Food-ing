@@ -42,7 +42,7 @@
             android:layout_marginLeft="60dp"
             android:gravity="center"
             android:text="Home"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
 
