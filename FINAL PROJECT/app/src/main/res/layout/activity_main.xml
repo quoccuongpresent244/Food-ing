@@ -40,28 +40,20 @@
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/discovery_off"
+                android:src="@drawable/bookmark_off"
                 android:visibility="gone"
-                android:animateLayoutChanges="true"
-                />
+                android:animateLayoutChanges="true"/>
             <ImageView
                 android:id="@+id/button3"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/bookmark_off"
+                android:src="@drawable/discovery_off"
                 android:visibility="gone"
-                android:animateLayoutChanges="true"/>
-            <ImageView
-                android:id="@+id/button4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="30dp"
-                android:layout_gravity="center"
-                android:src="@drawable/profile_off"
-                android:visibility="gone"
-                android:animateLayoutChanges="true"/>
+                android:animateLayoutChanges="true"
+                />
+
 
         </LinearLayout>
         <TextView

@@ -93,7 +93,6 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             GetImageBitmap getImageBitmap = new GetImageBitmap(i);
             getImageBitmap.execute(urlTmp);
 
-
             listData.placeInfoList.add(new PlaceInfo(placeName, vicinity, rating, open_now, user_ratings_total, price_level, distance));
 
             LatLng latLng = new LatLng(lat, lng);

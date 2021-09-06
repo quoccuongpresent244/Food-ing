@@ -14,6 +14,8 @@ import android.Manifest;
 import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.AnimationDrawable;
 import android.location.Location;
@@ -64,8 +66,12 @@ public class MainActivity extends FragmentActivity{
         setContentView(R.layout.activity_main);
         bindingObject();
         setOnClick();
+        setBitmapDefault();
     }
 
+    private void setBitmapDefault() {
+        ListData.getInstance().bitmapDefault = BitmapFactory.decodeResource(getResources(), R.drawable.bitmapdefault);
+    }
 
 
     private void bindingObject(){
@@ -75,24 +81,20 @@ public class MainActivity extends FragmentActivity{
         pagerAdapter = new ScreenSlidePagerAdapter(this);
         viewPager.setAdapter(pagerAdapter);
 
-        button = new ImageView[4];
+        button = new ImageView[3];
         button[0] = findViewById(R.id.button1);
         button[1] = findViewById(R.id.button2);
         button[2] = findViewById(R.id.button3);
-        button[3] = findViewById(R.id.button4);
-        imageResOff = new int[4];
+        imageResOff = new int[3];
         imageResOff[0] = R.drawable.home_off;
-        imageResOff[1] = R.drawable.discovery_off;
-        imageResOff[2] = R.drawable.bookmark_off;
-        imageResOff[3] = R.drawable.profile_off;
-
-        imageResOn = new int[4];
+        imageResOff[1] = R.drawable.bookmark_off;
+        imageResOff[2] = R.drawable.discovery_off;
+        imageResOn = new int[3];
         imageResOn[0] = R.drawable.home_on;
-        imageResOn[1] = R.drawable.discovery_on;
-        imageResOn[2] = R.drawable.bookmark_on;
-        imageResOn[3] = R.drawable.profile_on;
+        imageResOn[1] = R.drawable.bookmark_on;
+        imageResOn[2] = R.drawable.discovery_on;
 
-        title = new String[] {"Home", "Discovery", "Favorite", "Profile"};
+        title = new String[] {"Home", "Favorite","Discovery",};
 
         for (ImageView btn : button){
             btn.setAlpha(0.0f);
@@ -124,7 +126,7 @@ public class MainActivity extends FragmentActivity{
             }
         });
 
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 3; i++){
             int finalI = i;
             button[i].setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -167,9 +169,12 @@ public class MainActivity extends FragmentActivity{
     }
 
     private void playAnimation(int position) {
-        pagerAdapter = (FragmentStateAdapter) pagerAdapter;
-        HomePage homePage = (HomePage) pagerAdapter.createFragment(position);
-        homePage.setAnimation(R.anim.layout_animation);
+        if(position == 0){
+            pagerAdapter = (FragmentStateAdapter) pagerAdapter;
+            HomePage homePage = (HomePage) pagerAdapter.createFragment(0);
+            homePage.setAnimation(R.anim.layout_animation);
+        }
+
     }
 
 
@@ -226,9 +231,8 @@ public class MainActivity extends FragmentActivity{
 
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
         public HomePage homePage1 = new HomePage();
-        public HomePage homePage2 = new HomePage();
-        public HomePage homePage3 = new HomePage();
-        public HomePage homePage4 = new HomePage();
+        public FavoriteFragment favoriteFragment = new FavoriteFragment();
+        public FavoriteFragment favoriteFragment1 = new FavoriteFragment();
 
         public ScreenSlidePagerAdapter(FragmentActivity fa) {
             super(fa);
@@ -237,14 +241,13 @@ public class MainActivity extends FragmentActivity{
         @Override
         public Fragment createFragment(int position) {
             if(position == 0) return homePage1;
-            if(position == 1) return homePage2;
-            if(position == 2) return homePage3;
-            return homePage4;
+            if(position == 1) return favoriteFragment;
+            return favoriteFragment1;
         }
 
         @Override
         public int getItemCount() {
-            return 4;
+            return 3;
         }
 
 

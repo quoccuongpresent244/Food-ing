@@ -1,6 +1,7 @@
 package com.example.mapstest;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -28,7 +29,9 @@ public class GetImageBitmap extends AsyncTask<String, Integer, Bitmap> {
     @Override
     protected void onPostExecute(Bitmap bitmap) {
         ListData listData = ListData.getInstance();
+
         listData.placeInfoList.get(index).setPhoto(bitmap);
+
     }
 
 

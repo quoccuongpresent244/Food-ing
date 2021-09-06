@@ -1,6 +1,9 @@
 package com.example.mapstest;
 
 import android.animation.LayoutTransition;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.util.Log;
@@ -20,9 +23,11 @@ import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
     private ArrayList<PlaceInfo> data;
+    private Context context;
 
-    public Adapter(ArrayList<PlaceInfo> data){
+    public Adapter(ArrayList<PlaceInfo> data, Context context){
         this.data = data;
+        this.context = context;
     }
 
     @Override
@@ -51,11 +56,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
                     (!data.get(position).getOpen_now().equals("false"))?
                             "OPEN" : "CLOSE"
                 );
-        holder.userRatingText.setText(data.get(position).getUser_ratings_total());
-        holder.ratingText.setText(data.get(position).getRating());
-        holder.photoView.setImageBitmap(data.get(position).getPhoto());
+        holder.userRatingText.setText("Total Rating: " + data.get(position).getUser_ratings_total());
+        holder.ratingText.setText("Rating: " +data.get(position).getRating());
+        if(data.get(position).getPhoto() == null){
+            holder.photoView.setImageBitmap(ListData.getInstance().bitmapDefault);
+        }
+        else{
+            holder.photoView.setImageBitmap(data.get(position).getPhoto());
+        }
         holder.titleText.setText(data.get(position).getName());
-
+        holder.distanceText.setText("Distance: "+ data.get(position).getDistance());
 
 
 
@@ -90,7 +100,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             userRatingText = itemView.findViewById(R.id.user_rating);
             ratingText = itemView.findViewById(R.id.rating);
             photoView = itemView.findViewById(R.id.photo);
-
+            distanceText = itemView.findViewById(R.id.distance);
         }
     }
 }

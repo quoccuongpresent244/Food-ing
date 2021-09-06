@@ -37,7 +37,7 @@ public class HomePage extends Fragment {
                 = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_animation);
         recyclerView.setLayoutAnimation(layoutAnimationController);
 
-
-        recyclerView.setAdapter(listData.getAdapter());
+        
+        recyclerView.setAdapter(listData.getAdapter(getContext()));
     }
 }

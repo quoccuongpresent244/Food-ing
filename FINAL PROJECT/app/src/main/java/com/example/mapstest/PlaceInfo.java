@@ -27,6 +27,10 @@ public class PlaceInfo {
         this.distance = distance;
     }
 
+    public String getDistance() {
+        return distance;
+    }
+
     public Bitmap getPhoto() {
         return photo;
     }

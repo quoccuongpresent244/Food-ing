@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_hello.xml" value="0.1796875" />
+        <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_main.xml" value="0.13148148148148148" />
         <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/activity_maps.xml" value="0.13148148148148148" />
+        <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/fragment_favorite.xml" value="0.1796875" />
+        <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/fragment_home.xml" value="0.13148148148148148" />
         <entry key="..\:/Android/CS426_MaiLaAnhEm/FINAL PROJECT/app/src/main/res/layout/item.xml" value="0.1640625" />
       </map>
     </option>
