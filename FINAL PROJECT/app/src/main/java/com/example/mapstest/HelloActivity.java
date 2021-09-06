@@ -15,9 +15,10 @@ public class HelloActivity extends AppCompatActivity {
         findViewById(R.id.buttonBegin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HelloActivity.this, MapsActivity.class);
+                Intent intent = new Intent(HelloActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
+        ListData.getInstance();
     }
 }

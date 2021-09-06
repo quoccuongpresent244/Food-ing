@@ -60,6 +60,7 @@ public class MainActivity extends FragmentActivity{
     private static final int NUM_PAGES = 2;
     private ViewPager2 viewPager;
     private FragmentStateAdapter pagerAdapter;
+    private boolean Start = true;
 
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override
@@ -68,11 +69,12 @@ public class MainActivity extends FragmentActivity{
         setContentView(R.layout.activity_main);
         bindingObject();
         setOnClick();
-        setBitmapDefault();
+        setDefault();
     }
 
-    private void setBitmapDefault() {
+    private void setDefault() {
         ListData.getInstance().bitmapDefault = BitmapFactory.decodeResource(getResources(), R.drawable.bitmapdefault);
+
     }
 
 
@@ -105,7 +107,7 @@ public class MainActivity extends FragmentActivity{
         }
         indicator[0].setScaleX(1.0f);
 
-        title = new String[] {"Home", "Favorite","Discovery",};
+        title = new String[] {"List of restaurant", "Guide","Discovery",};
 
         menuAnimate = (AnimatedVectorDrawable) getDrawable(R.drawable.ic_menu);
         menuAnimateRev = (AnimatedVectorDrawable) getDrawable(R.drawable.ic_menu_rev);
@@ -220,7 +222,7 @@ public class MainActivity extends FragmentActivity{
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
-        public HomePage homePage1 = new HomePage();
+        public HomePage homePage1 = new HomePage(viewPager);
         public FavoriteFragment favoriteFragment = new FavoriteFragment();
         public DiscoveryFragment discoveryFragment = new DiscoveryFragment();
 
@@ -238,6 +240,17 @@ public class MainActivity extends FragmentActivity{
         @Override
         public int getItemCount() {
             return 3;
+        }
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(currentPage == 0){
+            playAnimation(0);
+        }else{
+            viewPager.setCurrentItem(0);
         }
 
     }

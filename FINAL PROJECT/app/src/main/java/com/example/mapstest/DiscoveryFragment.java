@@ -1,5 +1,6 @@
 package com.example.mapstest;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -25,7 +26,8 @@ public class DiscoveryFragment extends Fragment {
         backToMapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().finish();
+                Intent intent = new Intent(getContext(), MapsActivity.class);
+                startActivity(intent);
             }
         });
         return view;

@@ -12,6 +12,9 @@ public class ListData {
     private Adapter adapter;
     public Bitmap bitmapDefault;
 
+    public boolean checkList(){
+        return placeInfoList.size() == 0;
+    }
 
     private ListData(){
         placeInfoList = new ArrayList<>();
