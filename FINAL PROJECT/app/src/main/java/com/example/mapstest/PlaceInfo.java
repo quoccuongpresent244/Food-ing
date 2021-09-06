@@ -15,9 +15,10 @@ public class PlaceInfo {
     private String user_ratings_total;
     private String price_level;
     private String distance;
+    private String lat, lng;
     static List<PlaceInfo> placeInfoList;
 
-    public PlaceInfo(String name, String vicinity, String rating, String open_now, String user_ratings_total, String price_level, String distance) {
+    public PlaceInfo(String name, String vicinity, String rating, String open_now, String user_ratings_total, String price_level, String distance, String lat, String lng) {
         this.name = name;
         this.vicinity = vicinity;
         this.rating = rating;
@@ -25,6 +26,16 @@ public class PlaceInfo {
         this.user_ratings_total = user_ratings_total;
         this.price_level = price_level;
         this.distance = distance;
+        this.lat = lat;
+        this.lng = lng;
+    }
+
+    public String getLat() {
+        return lat;
+    }
+
+    public String getLng() {
+        return lng;
     }
 
     public String getDistance() {
