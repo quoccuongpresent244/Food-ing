@@ -103,35 +103,40 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Address: "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text"
+                        />
 
                     <TextView
                         android:id="@+id/hour_open"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Status: "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text"/>
 
                     <TextView
                         android:id="@+id/user_rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Phone Number: "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text"/>
 
                     <TextView
                         android:id="@+id/rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rate: "
-
+                        android:textColor="@color/text"
                         android:textSize="20dp" />
                     <TextView
                         android:id="@+id/distance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Distance: "
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/text"/>
                 </LinearLayout>
 
                 <ImageView
