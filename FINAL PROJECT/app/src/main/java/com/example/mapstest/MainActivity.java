@@ -222,7 +222,7 @@ public class MainActivity extends FragmentActivity{
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
         public HomePage homePage1 = new HomePage();
         public FavoriteFragment favoriteFragment = new FavoriteFragment();
-        public FavoriteFragment favoriteFragment1 = new FavoriteFragment();
+        public DiscoveryFragment discoveryFragment = new DiscoveryFragment();
 
         public ScreenSlidePagerAdapter(FragmentActivity fa) {
             super(fa);
@@ -232,7 +232,7 @@ public class MainActivity extends FragmentActivity{
         public Fragment createFragment(int position) {
             if(position == 0) return homePage1;
             if(position == 1) return favoriteFragment;
-            return favoriteFragment1;
+            return discoveryFragment;
         }
 
         @Override

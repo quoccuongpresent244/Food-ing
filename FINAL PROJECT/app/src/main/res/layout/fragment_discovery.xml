@@ -6,6 +6,17 @@
     tools:context=".DiscoveryFragment">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:src="@drawable/bgdis"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/backToMapBtn"
+        android:layout_width="218dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:src="@drawable/btmbtn">
+
+    </ImageView>
 
 </FrameLayout>

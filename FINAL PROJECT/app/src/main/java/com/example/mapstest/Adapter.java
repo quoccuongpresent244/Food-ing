@@ -58,10 +58,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
 
         holder.titleText.setText(data.get(position).getName());
         holder.addressText.setText(data.get(position).getVicinity());
-        holder.hourText.setText(
-                    (!data.get(position).getOpen_now().equals("false"))?
-                            "OPEN" : "CLOSE"
-                );
+
+        if (data.get(position).getOpen_now().equals("false")) {
+            holder.hourText.setText("CLOSE");
+            holder.hourText.setTextColor(context.getResources().getColor(R.color.red));
+        }
+        else
+        {
+            holder.hourText.setText("OPEN");
+        }
+
         holder.userRatingText.setText("Total Rating: " + data.get(position).getUser_ratings_total());
         holder.ratingText.setText("Rating: " +data.get(position).getRating());
         if(data.get(position).getPhoto() == null){
