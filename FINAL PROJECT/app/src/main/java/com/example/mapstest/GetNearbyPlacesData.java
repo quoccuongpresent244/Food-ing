@@ -76,6 +76,9 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             double lat = Double.parseDouble(googlePlace.get("lat"));
             double lng = Double.parseDouble(googlePlace.get("lng"));
 
+            String place_lat = String.valueOf(lat);
+            String place_lng = String.valueOf(lng);
+
             //Calculate distance
             float[] result = new float[1];
             Location.distanceBetween(currLat, currLong, lat, lng, result);
@@ -95,7 +98,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
             GetImageBitmap getImageBitmap = new GetImageBitmap(i);
             getImageBitmap.execute(urlTmp);
             Log.d("hahaha", "ShowNearbyPlaces: ");
-            listData.placeInfoList.add(new PlaceInfo(placeName, vicinity, rating, open_now, user_ratings_total, price_level, distance));
+            listData.placeInfoList.add(new PlaceInfo(placeName, vicinity, rating, open_now, user_ratings_total, price_level, distance, place_lat, place_lng));
 
             LatLng latLng = new LatLng(lat, lng);
             markerOptions.position(latLng);

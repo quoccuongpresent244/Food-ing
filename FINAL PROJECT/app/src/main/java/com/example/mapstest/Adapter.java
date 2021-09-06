@@ -2,8 +2,10 @@ package com.example.mapstest;
 
 import android.animation.LayoutTransition;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.util.Log;
@@ -71,7 +73,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         holder.goHereBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //string url
+                String lat = data.get(position).getLat();
+                String lng = data.get(position).getLng();
+                String url = "google.navigation:q=" + lat + ", " + lng + "&mode=l";
 
+                Uri gmmIntentUri = Uri.parse(url);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                context.startActivity(mapIntent);
             }
         });
 
