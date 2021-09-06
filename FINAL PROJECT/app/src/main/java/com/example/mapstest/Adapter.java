@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -56,6 +57,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
         holder.photoView.setImageBitmap(data.get(position).getPhoto());
         holder.titleText.setText(data.get(position).getName());
 
+        holder.goHereBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
 
 
 
@@ -70,12 +78,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
     }
 
     protected class MyViewHolder extends  RecyclerView.ViewHolder{
-        private LinearLayout expandableView;
+        private ConstraintLayout expandableView;
         private FrameLayout title;
         private LinearLayout layout;
         private TextView titleText, addressText, hourText, userRatingText, ratingText, distanceText;
 
-        private ImageView photoView;
+        private ImageView photoView, goHereBtn;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -90,6 +98,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
             userRatingText = itemView.findViewById(R.id.user_rating);
             ratingText = itemView.findViewById(R.id.rating);
             photoView = itemView.findViewById(R.id.photo);
+            goHereBtn = itemView.findViewById(R.id.gohereBtn);
 
         }
     }
