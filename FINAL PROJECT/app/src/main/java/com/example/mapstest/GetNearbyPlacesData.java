@@ -63,7 +63,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
     private void ShowNearbyPlaces(List<HashMap<String, String>> nearbyPlacesList) {
         listData = ListData.getInstance();
         String url = "https://maps.googleapis.com/maps/api/place/photo?";
-        String key = "key=AIzaSyC7xnKUt1WYXicWNxrwoVqa7_93HWzclZs";
+        String key = "key=AIzaSyCovhdbC1vTq6W7nF3JHdOZ_5GiMOudCSk";
         String maxWidth = "maxwidth=400";
         url = url + maxWidth + "&" + key;
         for (int i = 0; i < nearbyPlacesList.size(); i++) {
