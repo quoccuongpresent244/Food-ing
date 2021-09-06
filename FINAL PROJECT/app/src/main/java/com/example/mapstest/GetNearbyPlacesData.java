@@ -29,6 +29,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
     double currLat;
     double currLong;
 
+
     public GetNearbyPlacesData(double lat, double Long){
         currLat = lat;
         currLong = Long;
@@ -62,8 +63,9 @@ public class GetNearbyPlacesData extends AsyncTask<Object, String, String> {
 
     private void ShowNearbyPlaces(List<HashMap<String, String>> nearbyPlacesList) {
         listData = ListData.getInstance();
+        listData.resetData();
         String url = "https://maps.googleapis.com/maps/api/place/photo?";
-        String key = "key=AIzaSyCovhdbC1vTq6W7nF3JHdOZ_5GiMOudCSk";
+        String key = "key=AIzaSyD2ASQopIQa5HNRRf3EcU4UY2Kt6R-_Sno";
         String maxWidth = "maxwidth=400";
         url = url + maxWidth + "&" + key;
         for (int i = 0; i < nearbyPlacesList.size(); i++) {
