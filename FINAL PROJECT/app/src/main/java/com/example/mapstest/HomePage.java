@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +38,8 @@ public class HomePage extends Fragment {
                 = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_animation);
         recyclerView.setLayoutAnimation(layoutAnimationController);
 
-        
+        Log.d("Gohere", "Gohere ");
+
         recyclerView.setAdapter(listData.getAdapter(getContext()));
     }
 }

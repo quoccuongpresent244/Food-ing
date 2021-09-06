@@ -53,6 +53,8 @@ public class MainActivity extends FragmentActivity{
     private int[] imageResOn;
     private String[] title;
     private ImageView menu;
+    private ImageView[] indicator;
+
     private TextView titleMenu;
     private int currentPage = 0;
     private static final int NUM_PAGES = 2;
@@ -93,12 +95,18 @@ public class MainActivity extends FragmentActivity{
         imageResOn[0] = R.drawable.home_on;
         imageResOn[1] = R.drawable.bookmark_on;
         imageResOn[2] = R.drawable.discovery_on;
+        indicator = new ImageView[3];
+        indicator[0] = findViewById(R.id.indicator1);
+        indicator[1] = findViewById(R.id.indicator3);
+        indicator[2] = findViewById(R.id.indicator2);
+        for(ImageView im : indicator){
+            im.setVisibility(View.VISIBLE);
+            im.setScaleX(0.0f);
+        }
+        indicator[0].setScaleX(1.0f);
 
         title = new String[] {"Home", "Favorite","Discovery",};
 
-        for (ImageView btn : button){
-            btn.setAlpha(0.0f);
-        }
         menuAnimate = (AnimatedVectorDrawable) getDrawable(R.drawable.ic_menu);
         menuAnimateRev = (AnimatedVectorDrawable) getDrawable(R.drawable.ic_menu_rev);
 
@@ -106,41 +114,17 @@ public class MainActivity extends FragmentActivity{
     }
 
     private void setOnClick() {
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(statusMenu) {
-                    menu.setImageDrawable(menuAnimate);
-                    menuAnimate.start();
-                    statusMenu = false;
-                    setTitleMenu(false);
-                    setButton(true);
-                }
-                else{
-                    menu.setImageDrawable(menuAnimateRev);
-                    menuAnimateRev.start();
-                    statusMenu = true;
-                    setTitleMenu(true);
-                    setButton(false);
-                }
-            }
-        });
 
         for (int i = 0; i < 3; i++){
             int finalI = i;
             button[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("position", "1");
-                    menu.setImageDrawable(menuAnimateRev);
-                    menuAnimateRev.start();
                     statusMenu = true;
-                    setButton(false);
-                    titleMenu.setText(title[finalI]);
-                    setTitleMenu(true);
-                    button[currentPage].setImageDrawable(getDrawable(imageResOff[currentPage]));
-                    button[finalI].setImageDrawable(getDrawable(imageResOn[finalI]));
-
+                    setButton(finalI);
+                    setTitleMenu(title[finalI]);
+                    animChange(currentPage);
+                    animChangeRev(finalI);
                     viewPager.setCurrentItem(finalI, true);
                     currentPage = finalI;
                 }
@@ -149,23 +133,27 @@ public class MainActivity extends FragmentActivity{
         viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                menu.setImageDrawable(menuAnimate);
-                menuAnimate.start();
-                setButton(true);
-
-                titleMenu.animate().scaleX(0.0f)
-                        .setListener(new Animator.AnimatorListener() {
-                            @Override public void onAnimationStart(Animator animation) {}
-                            @Override public void onAnimationCancel(Animator animation) {}
-                            @Override public void onAnimationRepeat(Animator animation) {}
-                            @Override
-                            public void onAnimationEnd(Animator animation) {
-                                button[position].performClick();
-                            }
-                        });
+                super.onPageSelected(position);
                 playAnimation(position);
+                animChange(currentPage);
+
+                setButton(position);
+                setTitleMenu(title[position]);
+                animChangeRev(position);
+                currentPage = position;
             }
         });
+
+    }
+
+    private void animChangeRev(int position) {
+        button[position].animate().scaleX(0.0f)
+                .setListener(new MyAnimatorListener(0,button[position],position));
+    }
+
+    private void animChange(int position) {
+        button[position].animate().scaleX(0.0f)
+                .setListener(new MyAnimatorListener(1,button[position],position));
     }
 
     private void playAnimation(int position) {
@@ -182,23 +170,34 @@ public class MainActivity extends FragmentActivity{
     private class MyAnimatorListener implements Animator.AnimatorListener {
         private int TYPE;
         private View view;
-        public MyAnimatorListener(int TYPE, View view){
+        private String string;
+        private int position;
+        public MyAnimatorListener(int TYPE, View view, String string){
             this.TYPE = TYPE;
             this.view = view;
+            this.string = string;
+        }
+        public MyAnimatorListener(int TYPE, View view, int position){
+            this.TYPE = TYPE;
+            this.view = view;
+            this.position = position;
         }
         @Override
         public void onAnimationStart(Animator animation) {
-            if(TYPE == 0){
-                view.setVisibility(View.VISIBLE);
-            }
         }
         @Override
         public void onAnimationEnd(Animator animation) {
+            if(TYPE == 0){
+                ((ImageView)view).setImageDrawable(getDrawable(imageResOn[position]));
+                button[position].animate().scaleX(1.0f);
+            }
             if(TYPE == 1){
-                view.setVisibility(View.GONE);
+                ((ImageView)view).setImageDrawable(getDrawable(imageResOff[position]));
+                button[position].animate().scaleX(1.0f);
             }
             if (TYPE == 2){
-                view.performClick();
+                ((TextView) view).setText(string);
+                view.animate().scaleX(1.0f);
             }
         }
         @Override public void onAnimationCancel(Animator animation) {}
@@ -206,27 +205,18 @@ public class MainActivity extends FragmentActivity{
     }
 
 
-    private void setButton(boolean status) {
-        for (ImageView btn : button){
-            if(status){
-                btn.animate().alpha(1.0f)
-                .setListener(new MyAnimatorListener(0,btn));
+    private void setButton(int position) {
+        for (int i = 0; i < 3; i++){
+            if(i == position){
+                indicator[i].animate().scaleX(1.0f);
             }
             else{
-                btn.animate().alpha(0.0f)
-                .setListener(new MyAnimatorListener(1,btn));
+                indicator[i].animate().scaleX(0.0f);
             }
         }
     }
-    private void setTitleMenu(boolean status){
-        if (status) {
-            titleMenu.animate().scaleX(1.0f)
-                    .setListener(new MyAnimatorListener(0, titleMenu));
-        }
-        else {
-            titleMenu.animate().scaleX(0.0f)
-                    .setListener(new MyAnimatorListener(1, titleMenu));
-        }
+    private void setTitleMenu(String title){
+        titleMenu.animate().scaleX(0.0f).setListener(new MyAnimatorListener(2,titleMenu, title));
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
@@ -249,7 +239,6 @@ public class MainActivity extends FragmentActivity{
         public int getItemCount() {
             return 3;
         }
-
 
     }
 }

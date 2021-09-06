@@ -12,9 +12,9 @@
 <!--    <color name="primary_light">#FFFFFF</color>-->
 <!--    <color name="primary_dark">#caa99f</color>-->
 
-<!--    <color name="secondary">#8fead8</color>-->
-<!--    <color name="secondary_light">#c2ffff</color>-->
-<!--    <color name="secondary_dark">#5db7a7</color>-->
+   <color name="secondary">#8fead8</color>
+   <color name="secondary_light">#c2ffff</color>
+   <color name="secondary_dark">#5db7a7</color>
 
 
 
@@ -22,8 +22,6 @@
     <color name="primary_light">#ff5131</color>
     <color name="primary_dark">#9b0000</color>
 
-    <color name="secondary">#fafafa</color>
-    <color name="secondary_light">#ffffff</color>
-    <color name="secondary_dark">#c7c7c7</color>
+
     <color name="text">#fafafa</color>
 </resources>
