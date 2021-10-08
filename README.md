@@ -1,6 +1,9 @@
 # Fooding
 If you are a new tourist to a new city and you have no idea, or you and your lover are planning a date but don't know what to eat and where to eat? Then our application will be the best choice. The app will give you the most intuitive list of eateries around you, from which you can make your own decisions  
 
+## Key Technologies
+`Java`, `SQL`, `Android Studio`, `Computer Vision`, `Machine Learning`
+
 # App Structure:
 MapsActivity: A map show nearby restaurants
 MainAcitivity:
