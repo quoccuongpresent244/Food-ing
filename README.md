@@ -22,3 +22,8 @@ If they don’t know the way to go there, they can tap on the [Go Here] button. 
 Main Activity: 
 Using ViewAnimator to smoothly switch between tabs.
 Using ViewPager and NavigationBar to hold and change among our fragments.
+
+# Team Members: 
+Mai Quốc Khánh 
+Phạm Thiên Long 
+Nguyễn Duy Anh Quốc
