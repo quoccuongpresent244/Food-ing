@@ -28,5 +28,7 @@ Using ViewPager and NavigationBar to hold and change among our fragments.
 
 # Team Members: 
 Mai Quốc Khánh 
-Phạm Thiên Long 
+
+Phạm Thiên Long
+
 Nguyễn Duy Anh Quốc
